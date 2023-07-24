@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "pygame-of-life"
+version = "0.1.0"
+description = ""
+authors = ["Fabián Meléndez"]
+readme = "README.md"
+packages = [{include = "pygame_of_life"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pygame = "^2.5.0"
+
+[tool.poetry.scripts]
+pygame-of-life = "pygame_of_life.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
